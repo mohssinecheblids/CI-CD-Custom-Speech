@@ -99,6 +99,11 @@ jobs:
           # Indicates all history.
           fetch-depth: "0"
           # lfs: true
+      
+      - name: Install dotnet specific version (3.0)
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '3.0.x'
 
       # - name: Checkout LFS objects
       #   run: git lfs checkout
